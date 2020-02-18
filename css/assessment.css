@@ -1,41 +1,57 @@
+/* MOBILE VIEW this is the default, mobile view*/
 
-/* this is the default, mobile view*/
+
+/* ---------------------------------------------------*/
 
 h1 {
-  display: grid;
-  font-size: 200%;
-  text-transform: uppercase;
-  align-items: center;
-  justify-content: center;
+    display: grid;
+    font-size: 200%;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
-  text-transform: uppercase;
+    text-transform: uppercase;
+}
+
+#mystuff {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
 }
 
 main img {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  margin-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  /*Your code here*/
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /*Your code here*/
 }
 
-div{
-   padding: 30px;
-   margin:5px;
-   /* YOUR CODE HERE */
+div {
+    padding: 30px;
+    margin: 5px;
+    /* YOUR CODE HERE */
+}
+
+body {
+    background-image: url("https://github.com/shinabarger/coding_test_1/blob/master/images/back-ground.jpeg?raw=true");
 }
 
 
-/*DESKTOP view if larger than 850px */
+/*DESKTOP view if larger than 850px below */
+
+
+/*-----------------------------------------*/
+
 @media screen and (min-width: 850px) {
     /* Cards! */
     #mystuff {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
