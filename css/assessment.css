@@ -3,6 +3,14 @@
 
 /* ---------------------------------------------------*/
 
+body {
+    background-image: url("../images/back-ground.JPEG");
+}
+
+header {
+    text-transform: uppercase;
+}
+
 h1 {
     display: grid;
     font-size: 200%;
@@ -11,17 +19,7 @@ h1 {
     justify-content: center;
 }
 
-header {
-    text-transform: uppercase;
-}
-
-#mystuff {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-}
-
-main img {
+img {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -38,8 +36,10 @@ div {
     /* YOUR CODE HERE */
 }
 
-body {
-    background-image: url("../images/back-ground.JPEG");
+#mystuff {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
 }
 
 
@@ -48,10 +48,13 @@ body {
 
 /*-----------------------------------------*/
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 800px) {
     /* Cards! */
     #mystuff {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    div:nth-child(odd) {
+        border: solid black 1px;
     }
 }
