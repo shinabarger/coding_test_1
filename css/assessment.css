@@ -1,3 +1,41 @@
+
+/* this is the default, mobile view*/
+
 h1 {
-  font-size: 300px;
+  display: grid;
+  font-size: 200%;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  text-transform: uppercase;
+}
+
+main img {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /*Your code here*/
+}
+
+div{
+   padding: 30px;
+   margin:5px;
+   /* YOUR CODE HERE */
+}
+
+
+/*DESKTOP view if larger than 850px */
+@media screen and (min-width: 850px) {
+    /* Cards! */
+    #mystuff {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 }
